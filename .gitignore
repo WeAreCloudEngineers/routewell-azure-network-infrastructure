@@ -1,0 +1,22 @@
+# Environment & secrets (NEVER commit real credentials)
+.env
+.env.*
+!.env.example
+
+# SSH keys & certificates
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Python / scripting artifacts
+.venv/
+__pycache__/
+*.pyc
+
+
+# OS & Editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp

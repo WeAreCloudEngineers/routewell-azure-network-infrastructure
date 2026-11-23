@@ -1,0 +1,37 @@
+# ======================================================================
+# Group 1 — RouteWell Azure Network Infrastructure CODEOWNERS
+# ======================================================================
+
+# Default fallback: Group Lead reviews everything
+*                                   @JzwylFSE
+
+# Governance, workflow, and repo config (Group Lead only)
+/.github/                           @JzwylFSE
+/CONTRIBUTING.md                    @JzwylFSE
+/README.md                          @JzwylFSE
+
+# --------------------------------------------------------------------------
+# Phase 0 Deliverables
+# Team Lead approves member PRs -> Group Lead (@JzwylFSE) approves into develop
+# (Add Team Lead handles here once collected)
+# ------------------------------------------------------------------------------
+
+# Section 2.1: CIDR Planning (Lead & Final Reviewer: Jah'swill)
+/docs/phase-0/cidr/                 @JzwylFSE
+
+# Section 2.2: NSG Rules (Lead: Chimamkpa | Final Reviewer: Jah'swill)
+/docs/phase-0/nsg/                           
+
+# Section 2.3: Public Access (Lead: Ijeomah | Final Reviewer: Jah'swill)
+/docs/phase-0/public-access/        
+
+# Section 2.4: Architecture Diagram (Lead: Yewande | Final Reviewer: Jah'swill)
+/docs/phase-0/diagram/              
+
+<!-- # ------------------------------------------------------------------------
+# Week 2 & 3 Implementation (Group Lead Controlled)
+# ------------------------------------------------------------------------
+/scripts/                           @JzwylFSE
+/configs/                           @JzwylFSE
+/docs/incident-report.md            @JzwylFSE
+/screenshots/                       @JzwylFSE -->
