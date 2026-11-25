@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="860" viewBox="0 0 900 860">
+<rect width="900" height="860" fill="#FFFFFF"/>
+<text x="450.0" y="52" text-anchor="middle" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:22px;font-weight:700" fill="#10234A">ROUTEWELL – VNET &amp; SUBNET LAYOUT</text>
+<rect x="60" y="80" width="780" height="760" rx="18" fill="#F4F9FF" stroke="#1261B5" stroke-width="3" stroke-dasharray="10 6"/>
+<text x="450.0" y="110" text-anchor="middle" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:17px;font-weight:700" fill="#123A68">Azure Virtual Network (VNet)</text>
+<text x="450.0" y="133" text-anchor="middle" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:15px" fill="#123A68">Address space: 10.10.0.0/16</text>
+<text x="450.0" y="153" text-anchor="middle" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:12px" fill="#53657D">Private network boundary for the three-tier deployment</text>
+<rect x="100" y="180" width="700" height="170" rx="10" fill="#DCEEFF" stroke="#1683D8" stroke-width="2"/>
+<text x="120" y="210" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:16px;font-weight:700" fill="#10233F">WEB SUBNET</text>
+<text x="120" y="236" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">CIDR: <tspan font-weight="700">10.10.0.0/27</tspan> | Mask: 255.255.255.224</text>
+<text x="120" y="257" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Subnet range: <tspan font-weight="700">10.10.0.0 – 10.10.0.31</tspan></text>
+<text x="120" y="278" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Assignable IPs: <tspan font-weight="700">10.10.0.4 – 10.10.0.30</tspan></text>
+<text x="120" y="299" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Usable capacity: <tspan font-weight="700">27 IPs</tspan></text>
+<text x="120" y="320" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Planned Web VM: <tspan font-weight="700">10.10.0.4</tspan></text>
+<text x="120" y="341" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Hosts: <tspan font-weight="700">12 today / 12 in 6 months</tspan></text>
+<rect x="100" y="375" width="700" height="170" rx="10" fill="#E1F6E6" stroke="#25A244" stroke-width="2"/>
+<text x="120" y="405" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:16px;font-weight:700" fill="#10233F">APPLICATION SUBNET</text>
+<text x="120" y="431" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">CIDR: <tspan font-weight="700">10.10.0.64/26</tspan> | Mask: 255.255.255.192</text>
+<text x="120" y="452" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Subnet range: <tspan font-weight="700">10.10.0.64 – 10.10.0.127</tspan></text>
+<text x="120" y="473" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Assignable IPs: <tspan font-weight="700">10.10.0.68 – 10.10.0.126</tspan></text>
+<text x="120" y="494" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Usable capacity: <tspan font-weight="700">59 IPs</tspan></text>
+<text x="120" y="515" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Planned App VM: <tspan font-weight="700">10.10.0.68</tspan></text>
+<text x="120" y="536" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Hosts: <tspan font-weight="700">20 today / 40 in 6 months</tspan></text>
+<rect x="100" y="570" width="700" height="170" rx="10" fill="#EDE5FF" stroke="#7652C8" stroke-width="2"/>
+<text x="120" y="600" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:16px;font-weight:700" fill="#10233F">DATABASE SUBNET</text>
+<text x="120" y="626" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">CIDR: <tspan font-weight="700">10.10.0.32/28</tspan> | Mask: 255.255.255.240</text>
+<text x="120" y="647" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Subnet range: <tspan font-weight="700">10.10.0.32 – 10.10.0.47</tspan></text>
+<text x="120" y="668" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Assignable IPs: <tspan font-weight="700">10.10.0.36 – 10.10.0.46</tspan></text>
+<text x="120" y="689" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Usable capacity: <tspan font-weight="700">11 IPs</tspan></text>
+<text x="120" y="710" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Planned DB VM: <tspan font-weight="700">10.10.0.36</tspan></text>
+<text x="120" y="731" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:14px" fill="#10233F">Hosts: <tspan font-weight="700">6 today / 6 in 6 months</tspan></text>
+<rect x="100" y="760" width="700" height="44" rx="8" fill="#FFF4D6" stroke="#D6A63B" stroke-width="1"/>
+<text x="450.0" y="787" text-anchor="middle" style="font-family:Segoe UI,Arial,Helvetica,sans-serif;font-size:12px" fill="#59420A">Unused: 10.10.0.48 – 10.10.0.63  |  Subnets are non-overlapping and CIDR-aligned  |  Azure reserves 5 IPs per subnet</text>
+</svg>
