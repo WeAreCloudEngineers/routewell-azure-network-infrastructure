@@ -1,0 +1,28 @@
+<mxfile host="app.diagrams.net" modified="2026-11-25T13:50:00.000Z" version="24.7.17" type="device">
+  <diagram id="vnet-subnet-layout" name="VNet and Subnet Layout">
+    <mxGraphModel dx="900" dy="860" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="860" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="ROUTEWELL – VNET &amp; SUBNET LAYOUT" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#10234A;" vertex="1" parent="1">
+          <mxGeometry x="0" y="25" width="900" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vnet" value="&lt;b&gt;Azure Virtual Network (VNet)&lt;/b&gt;&lt;br&gt;Address space: 10.10.0.0/16&lt;br&gt;&lt;font style='font-size:12px;color:#53657D'&gt;Private network boundary for the three-tier deployment&lt;/font&gt;" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F4F9FF;strokeColor=#1261B5;strokeWidth=3;dashed=1;dashPattern=10 6;verticalAlign=top;align=center;spacingTop=14;fontSize=17;fontColor=#123A68;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="780" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="web" value="&lt;b style='font-size:16px'&gt;WEB SUBNET&lt;/b&gt;&lt;br&gt;CIDR: &lt;b&gt;10.10.0.0/27&lt;/b&gt; | Mask: 255.255.255.224&lt;br&gt;Subnet range: &lt;b&gt;10.10.0.0 – 10.10.0.31&lt;/b&gt;&lt;br&gt;Assignable IPs: &lt;b&gt;10.10.0.4 – 10.10.0.30&lt;/b&gt;&lt;br&gt;Usable capacity: &lt;b&gt;27 IPs&lt;/b&gt;&lt;br&gt;Planned Web VM: &lt;b&gt;10.10.0.4&lt;/b&gt;&lt;br&gt;Hosts: &lt;b&gt;12 today / 12 in 6 months&lt;/b&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#DCEEFF;strokeColor=#1683D8;strokeWidth=2;verticalAlign=top;align=left;spacingTop=10;spacingLeft=20;fontSize=14;fontColor=#10233F;" vertex="1" parent="1">
+          <mxGeometry x="100" y="180" width="700" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="app" value="&lt;b style='font-size:16px'&gt;APPLICATION SUBNET&lt;/b&gt;&lt;br&gt;CIDR: &lt;b&gt;10.10.0.64/26&lt;/b&gt; | Mask: 255.255.255.192&lt;br&gt;Subnet range: &lt;b&gt;10.10.0.64 – 10.10.0.127&lt;/b&gt;&lt;br&gt;Assignable IPs: &lt;b&gt;10.10.0.68 – 10.10.0.126&lt;/b&gt;&lt;br&gt;Usable capacity: &lt;b&gt;59 IPs&lt;/b&gt;&lt;br&gt;Planned App VM: &lt;b&gt;10.10.0.68&lt;/b&gt;&lt;br&gt;Hosts: &lt;b&gt;20 today / 40 in 6 months&lt;/b&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#E1F6E6;strokeColor=#25A244;strokeWidth=2;verticalAlign=top;align=left;spacingTop=10;spacingLeft=20;fontSize=14;fontColor=#10233F;" vertex="1" parent="1">
+          <mxGeometry x="100" y="375" width="700" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="db" value="&lt;b style='font-size:16px'&gt;DATABASE SUBNET&lt;/b&gt;&lt;br&gt;CIDR: &lt;b&gt;10.10.0.32/28&lt;/b&gt; | Mask: 255.255.255.240&lt;br&gt;Subnet range: &lt;b&gt;10.10.0.32 – 10.10.0.47&lt;/b&gt;&lt;br&gt;Assignable IPs: &lt;b&gt;10.10.0.36 – 10.10.0.46&lt;/b&gt;&lt;br&gt;Usable capacity: &lt;b&gt;11 IPs&lt;/b&gt;&lt;br&gt;Planned DB VM: &lt;b&gt;10.10.0.36&lt;/b&gt;&lt;br&gt;Hosts: &lt;b&gt;6 today / 6 in 6 months&lt;/b&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#EDE5FF;strokeColor=#7652C8;strokeWidth=2;verticalAlign=top;align=left;spacingTop=10;spacingLeft=20;fontSize=14;fontColor=#10233F;" vertex="1" parent="1">
+          <mxGeometry x="100" y="570" width="700" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="Unused: 10.10.0.48 – 10.10.0.63  |  Subnets are non-overlapping and CIDR-aligned  |  Azure reserves 5 IPs per subnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4D6;strokeColor=#D6A63B;align=center;verticalAlign=middle;fontSize=12;fontColor=#59420A;" vertex="1" parent="1">
+          <mxGeometry x="100" y="760" width="700" height="44" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
